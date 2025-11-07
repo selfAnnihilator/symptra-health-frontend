@@ -1,69 +1,83 @@
-# Welcome to your Lovable project
+# Symptra Health Frontend
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/93fd8a6f-1dfd-4c14-917b-555e5b0d4adb
+This is the frontend application for the Symptra Health Admin Panel, built with React, TypeScript, and Tailwind CSS. It provides a user-friendly interface for managing health-related products and content.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- User Authentication (Register/Login)
+- Product Management Dashboard
+- Article/Blog Management Interface
+- Approval Workflow for Content
+- Admin Dashboard with Request Handling
+- Role-Based Access Control
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/93fd8a6f-1dfd-4c14-917b-555e5b0d4adb) and start prompting.
+- React 18
+- TypeScript
+- Vite (Build Tool)
+- Tailwind CSS (Styling)
+- shadcn/ui (UI Components)
+- React Router (Navigation)
+- Supabase (Database/Authentication)
+- TanStack Query (Data Fetching)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Setup Instructions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository
+2. Navigate to the frontend folder
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
+4. Copy `.env.example` to `.env` and update the environment variables
+5. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   bun run dev
+   ```
 
-Follow these steps:
+## Environment Variables
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+You'll need to set up the following environment variables in your `.env` file:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- `VITE_SUPABASE_URL` - Your Supabase project URL
+- `VITE_SUPABASE_ANON_KEY` - Your Supabase anonymous key
+- `VITE_API_BASE_URL` - Base URL for the backend API
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Scripts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/          # Page components
+├── hooks/          # Custom React hooks
+├── utils/          # Utility functions
+├── types/          # TypeScript type definitions
+└── assets/         # Static assets (images, icons)
 ```
 
-**Edit a file directly in GitHub**
+## API Integration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The frontend communicates with the Symptra Health Backend API for all data operations. Make sure the backend server is running before using the frontend application.
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/93fd8a6f-1dfd-4c14-917b-555e5b0d4adb) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This application can be deployed to platforms like Vercel, Netlify, or any hosting service that supports static site deployment.
