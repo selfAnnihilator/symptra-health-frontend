@@ -4,6 +4,8 @@
 
 This is the frontend application for the Symptra Health Admin Panel, built with React, TypeScript, and Tailwind CSS. It provides a user-friendly interface for managing health-related products and content.
 
+**Live Demo**: [Symptra Health Frontend](https://symptra-health-frontend.vercel.app/)
+
 ## Features
 
 - User Authentication (Register/Login)
@@ -80,4 +82,6 @@ The frontend communicates with the Symptra Health Backend API for all data opera
 
 ## Deployment
 
-This application can be deployed to platforms like Vercel, Netlify, or any hosting service that supports static site deployment.
+The application is currently deployed on Vercel: [https://symptra-health-frontend.vercel.app/](https://symptra-health-frontend.vercel.app/)
+
+This application can also be deployed to platforms like Netlify or any hosting service that supports static site deployment.
